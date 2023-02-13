@@ -4,9 +4,9 @@ namespace LampLightSwitch
 {
     public class Lightswitch
     {
-        public bool On;
-        public int Height = 10;
-        public int Width = 10;
+        private bool On;
+        private int Height = 10;
+        private int Width = 10;
 
         // Dit heet een constructor.
         public Lightswitch(bool isOn)   
