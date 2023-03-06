@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL.cs" />
     <Compile Include="Lamp.cs" />
     <Compile Include="Lightswitch.cs" />
     <Compile Include="Program.cs" />
