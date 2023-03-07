@@ -1,17 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LampLightSwitch
 {
     public class Lightswitch
     {
+        public int ID;
+        public string Brand;
+        public string Location;
+
+
+
         private bool On;
         private int Height = 10;
         private int Width = 10;
+        public List<Lamp> lamps = new List<Lamp>();
 
         // Dit heet een constructor.
-        public Lightswitch(bool isOn)   
+        public Lightswitch(int id, string brand, string location)   
         {
-            On = isOn;
+            ID = id;
+            Brand = brand;
+            Location = location;
+            ID++;
+        }
+        public void AddLamp(Lamp lamp)
+        {
+           lamps.Add(lamp)
         }
         public void Toggle()
         {

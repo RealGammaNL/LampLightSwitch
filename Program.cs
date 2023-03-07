@@ -10,17 +10,32 @@ namespace LampLightSwitch
     {
         static void Main(string[] args)
         {
-            Lightswitch lightswitch1 = new Lightswitch(true);
-            lightswitch1.Toggle();
-            lightswitch1.ShowStatus();
+            DAL dal = new DAL();
+            dal.FillListFromCode();
 
-            Lamp lamp1 = new Lamp("black", 100,lightswitch1);
-            lamp1.Color = "black";
+            //foreach(Lightswitch lightswitch in dal.lightswitches)
+            //{
+            //    foreach (Lamp lamp in lightswitch.lamps)
+            //    {
+            //        Console.WriteLine("Lightswitch "+ lightswitch.is    .
+            //    }
+            //}
+
             
-            Console.WriteLine(lamp1.Color);
-            Console.ReadLine();
+            
+            
+            
+            //Lightswitch lightswitch1 = new Lightswitch(true);
+            //lightswitch1.Toggle();
+            //lightswitch1.ShowStatus();
 
-            Strobe strobe1 = new Strobe("blue", 20, lightswitch1, 200);
+            //Lamp lamp1 = new Lamp("black", 100,lightswitch1);
+            //lamp1.Color = "black";
+            
+            //Console.WriteLine(lamp1.Color);
+            //Console.ReadLine();
+
+            //Strobe strobe1 = new Strobe("blue", 20, lightswitch1, 200);
         }
     }
 }
